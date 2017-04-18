@@ -3,7 +3,7 @@ Plugin to Check if AutoTime enabled on Android
 
 ## install
 ```
-yourAppDir$ phonegap plugin add https://github.com/ipdvonline/CheckAUTOTIME.git
+yourAppDir$ phonegap plugin add https://github.com/ipdvonline/Cordova-Plugin-CheckAutoTime.git
 ```
 
 ## usage
