@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0" id="cordova-plugin-autotime" version="0.0.1">
+	<name>checkAUTOTIME</name>
+	<author>Leticia Almeida</author>
+	<description>check if AUTO TIME is enabled on Android</description>
+	<license>MIT</license>
+	<keywords>autotime, check, enabled, android </keywords>
+	<!--<repo>https://github.com/fastrde/cordova-plugin-fastrde-checkgps.git</repo>
+	<issue>https://github.com/fastrde/cordova-plugin-fastrde-checkgps/issues</issue>-->
+	<repo></repo>
+	<issue></issue>
+	<dependency id="cordova-plugin-geolocation" version="1.0.1" />
+	<js-module src="www/CheckAUTOTIME.js" name="CheckAUTOTIME">
+		<clobbers target="CheckAUTOTIME" />
+	</js-module>
+	<platform name="android">
+		<source-file src="src/android/CheckAUTOTIME.java" target-dir="src/cordova/autotime/plugins" />
+ 		<config-file target="res/xml/config.xml" parent="/*">
+			<feature name="CheckAUTOTIME">
+				<param name="android-package" value="cordova.autotime.plugins.CheckAUTOTIME"/>
+			</feature>
+		</config-file>
+	</platform>
+</plugin>
