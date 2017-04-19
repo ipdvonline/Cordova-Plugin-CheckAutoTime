@@ -9,7 +9,7 @@ yourAppDir$ phonegap plugin add https://github.com/ipdvonline/Cordova-Plugin-Che
 ## uso
 
 ```javascript
-CheckAutoTime.check(function(result){
+CheckAUTOTIME.check(function(result){
     //a variável result retorna 1 ou 0
 
   });
