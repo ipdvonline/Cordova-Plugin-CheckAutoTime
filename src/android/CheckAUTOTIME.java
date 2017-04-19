@@ -1,4 +1,4 @@
-package cordova.autotime.plugins;
+package cordova.autotime.plugins2;
 
 
 import org.apache.cordova.CordovaPlugin;
@@ -8,7 +8,6 @@ import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
-import android.location.LocationManager;
 import android.content.Context;
 import android.provider.Settings;
 import android.provider.Settings.SettingNotFoundException;
@@ -29,12 +28,11 @@ public class CheckAUTOTIME extends CordovaPlugin{
 	}
 	
 	private void check(CallbackContext callbackContext){
-		Context context = this.cordova.getActivity().getApplicationContext();
-		final LocationManager manager = (LocationManager) context.getSystemService( Context.LOCATION_SERVICE );
-		if ( (manager.isProviderEnabled( LocationManager.GPS_PROVIDER )) && (getAutoTime()) ) {
-				callbackContext.success();
+		if ((getAutoTime()) ) {
+				callbackContext.success(1);
 		}else{
-				callbackContext.error(0);
+				//callbackContext.error(0);
+				callbackContext.success(0);
 			}
 	 }
 	

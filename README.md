@@ -1,20 +1,16 @@
-# phonegap-CheckAUTOTIME
-Plugin to Check if AutoTime enabled on Android
+# phonegap-CheckAutoTime
+Plugin checa se a opção de data automática esta ativa
 
-## install
+## instalação
 ```
 yourAppDir$ phonegap plugin add https://github.com/ipdvonline/Cordova-Plugin-CheckAutoTime.git
 ```
 
-## usage
+## uso
 
 ```javascript
-CheckAUTOTIME.check(function(){
-    //AUTOTIME is enabled!
-
-  },
-  function(){
-    //AUTOTIME is disabled!
+CheckAutoTime.check(function(result){
+    //a variável result retorna 1 ou 0
 
   });
 ```
